@@ -1,0 +1,28 @@
+{
+  "name": "BFilter",
+  "description": "Easily building a filter,then filtering and outputting the needed data with BFilter.",
+  "main": "gulpfile.js",
+  "authors": [
+    "George S.h.aR"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "bfilter",
+    "sql",
+    "filter"
+  ],
+  "homepage": "http://elemb.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "lobibox": "^1.2.4",
+    "jquery-ui": "^1.12.1",
+    "nouislider": "^9.2.0"
+  }
+}

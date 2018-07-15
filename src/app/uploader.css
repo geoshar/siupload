@@ -1,0 +1,243 @@
+.uploader {
+    padding: 5px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    bottom: 0px;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+.uploader .dropper {
+    border: 5px dashed rgba(0, 0, 0, 0.23);
+    color: #535353;
+    position: relative;
+    max-width: 800px;
+    background: #f9f9f9;
+    height: 96%;
+    margin: 0 auto;
+}
+
+.uploader .scroll {
+    overflow: auto;
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    bottom: 60px;
+}
+
+.uploader .container .file {
+    padding: 16px 16px 4px 16px;
+    margin: 10px;
+    position: relative;
+}
+
+
+/* file info */
+
+.uploader .container .info {
+    text-align: left;
+    margin-left: 30px;
+    padding: 3px;
+}
+
+.uploader .container .info .name {
+    display: block;
+    border-bottom: 1px solid #537f9b;
+}
+
+.uploader .container .info .percent {
+    margin-left: 10px;
+}
+
+
+/* hide input */
+
+.uploader .input-files {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    position: absolute;
+    left: -999999px;
+}
+
+.uploader .input-folder {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25), 0px 0px 3px #FFF inset;
+    background: none repeat scroll 0% 0% #e0e0e0;
+    vertical-align: middle;
+    font-size: 11px;
+    color: #060606;
+    text-shadow: 0px 1px 0px #fff;
+    display: inline-block;
+    text-align: center;
+    border-color: #ccc #ccc #aaa;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25), 0px 0px 3px #FFF inset;
+    width: 180px;
+}
+
+.uploader .file.uploaded {
+    background: linear-gradient(to bottom, rgba(0, 182, 254, 0.22), rgba(7, 171, 216, 0.09)) repeat scroll 0% 0%;
+}
+
+.uploader .file.error {
+    background: linear-gradient(to bottom, rgba(254, 27, 0, 0.29), rgba(216, 81, 7, 0.1)) repeat scroll 0% 0%;
+}
+
+
+/* loader */
+
+.uploader .pre_loder {
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    overflow: hidden;
+    -webkit-box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.5) inset;
+    box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.5) inset;
+    height: 3px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.uploader .pre_loder .loder {
+    height: 2px;
+    background: none repeat scroll 0% 0% rgba(12, 138, 231, 0.66);
+    width: 0%;
+    border: 0.5px solid rgba(33, 30, 30, 0.1);
+}
+
+.uploader ul li.error p {
+    color: #f00;
+}
+
+.uploader .controllers {
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    top: 20px;
+}
+
+.uploader .file-controllers {
+    position: absolute;
+    right: 20px;
+    bottom: 21px;
+}
+
+
+/* buttons */
+
+.uploader .button {
+    margin: 0px 1px;
+    padding: 2px 7px;
+    border: 1px solid;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-user-select: none;
+    background: none repeat scroll 0% 0% #e0e0e0;
+    vertical-align: middle;
+    font-size: 11px;
+    color: #060606;
+    text-shadow: 0px 1px 0px #fff;
+    display: inline-block;
+    text-align: center;
+    border-color: #ccc #ccc #aaa;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25), 0px 0px 3px #FFF inset;
+    background-color: #ddd;
+    background-image: -webkit-linear-gradient(top, #fafafa, #dcdcdc);
+    background-image: -moz-linear-gradient(top, #fafafa, #dcdcdc);
+    background-image: -o-linear-gradient(top, #fafafa, #dcdcdc);
+    background-image: -ms-linear-gradient(top, #fafafa, #dcdcdc);
+    background-image: linear-gradient(to bottom, #fafafa, #dcdcdc);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.uploader .button:hover {
+    border-color: #aaa #aaa #999;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25), 0px 0px 3px #fff inset;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25), 0px 0px 3px #fff inset;
+    background-color: #f4f4f4;
+    background-image: -webkit-linear-gradient(top, #f0f0f0, #e6e6e6);
+    background-image: -moz-linear-gradient(top, #f0f0f0, #e6e6e6);
+    background-image: -o-linear-gradient(top, #f0f0f0, #e6e6e6);
+    background-image: -ms-linear-gradient(top, #f0f0f0, #e6e6e6);
+    background-image: linear-gradient(to bottom, #f0f0f0, #e6e6e6);
+}
+
+.uploader .button:active {
+    border-color: #888 #aaa #aaa;
+    -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25) inset, 0px 1px 0px #fff;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25) inset, 0px 1px 0px #fff;
+    background-color: #e0e0e0;
+    background-image: -webkit-linear-gradient(top, #c8c8c8, #e6e6e6);
+    background-image: -moz-linear-gradient(top, #c8c8c8, #e6e6e6);
+    background-image: -o-linear-gradient(top, #c8c8c8, #e6e6e6);
+    background-image: -ms-linear-gradient(top, #c8c8c8, #e6e6e6);
+    background-image: linear-gradient(to bottom, #c8c8c8, #e6e6e6);
+}
+
+.uploader .messages {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 50%;
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
+    z-index: 10;
+    padding: 10px;
+    font-size: 13px;
+    /*  -webkit-transition: box-shadow 1s linear;
+    -o-transition: box-shadow 1s linear;
+    -moz-transition: box-shadow 1s linear;
+    -ms-transition: box-shadow 1s linear;
+    -kthtml-transition: box-shadow 1s linear;
+    transition: box-shadow 1s linear;
+    */
+}
+
+.uploader .messages.Shadow-error {
+    color: #fff;
+    background: #ff6300 none repeat scroll 0% 0%;
+    -webkit-box-shadow: 0px 0px 23px 17px rgba(218, 23, 0, 0.25) inset, 0px 0px 36px 56px rgba(218, 23, 0, 0.25);
+    -moz-box-shadow: 0px 0px 23px 17px rgba(218, 23, 0, 0.25) inset, 0px 0px 36px 56px rgba(218, 23, 0, 0.25);
+    -webkit-box-shadow: 0px 0px 23px 17px rgba(218, 23, 0, 0.25) inset, 0px 0px 36px 56px rgba(218, 23, 0, 0.25);
+    box-shadow: 0px 0px 23px 17px rgba(218, 23, 0, 0.25) inset, 0px 0px 36px 56px rgba(218, 23, 0, 0.25);
+}
+
+.uploader .board {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    height: 50px;
+    padding: 4px;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 4px 60px 5px rgba(0, 0, 0, 0.27) inset;
+    box-shadow: 0px 4px 60px 5px rgba(0, 0, 0, 0.27) inset;
+}
+
+.uploader .board .progress-text {
+    color: #0789b4;
+    font-size: 13px;
+    position: absolute;
+    left: 20px;
+    top: 23px;
+}
+
+.uploader .board .progress {
+    height: 2px;
+    box-shadow: 0px 1px 4px 3px rgba(0, 0, 0, 0.13) inset;
+    border-radius: 1px;
+    overflow: hidden
+}
+
+.uploader .board .progress .line {
+    height: 2px;
+    background: none repeat scroll 0% 0% rgba(12, 138, 231, 0.66);
+    width: 0%;
+}
+
+.uploader .board .progress .line div {
+    display: inline-block;
+}

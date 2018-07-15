@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Uploader
+    </title>
+    <meta charset="utf-8"/>
+    <!-- head:css -->
+    <!-- app css -->
+    <!-- endinject -->
+    <!-- components:js -->
+    <!-- app js -->
+    <!-- endinject -->
+    <!-- head:js -->
+    <!-- app js -->
+    <!-- endinject -->
+
+</head>
+<body>
+<div id="uploaded"></div>
+<div class="uploader" id="uploader">
+    <div class="dropper">
+        <div class="messages"></div>
+        <div class="scroll">
+            <div class="container"></div>
+        </div>
+        <div class="board">
+            <div class="progress-text"></div>
+            <div class="progress">
+                <div class="line" id="progress"></div>
+            </div>
+            <div class="controllers">
+                <button class="button audselect">Выбрать видео</button>
+                <button class="button audsubmit" disabled="">Загрузить</button>
+                <input class="input-folder" id="folder" name="folder" placeholder="Папка загрузки" value=""/>
+            </div>
+        </div>
+        <input class="input-files" id="input" multiple="" name="upl" type="file"/>
+    </div>
+</div>
+</body>
+</html>
